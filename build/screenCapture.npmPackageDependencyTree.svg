@@ -1,0 +1,46 @@
+<svg height="686" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="686" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">11 megabytes</tspan>
+<tspan x="10" y="42">└─┬ renamer@0.6.1 </tspan>
+<tspan x="10" y="58">  ├─┬ app-usage-stats@0.4.1 </tspan>
+<tspan x="10" y="74">  │ ├── core-js@2.4.1 </tspan>
+<tspan x="10" y="90">  │ ├── feature-detect-es6@1.3.1 </tspan>
+<tspan x="10" y="106">  │ ├── home-path@1.0.5 </tspan>
+<tspan x="10" y="122">  │ └─┬ usage-stats@0.8.2 </tspan>
+<tspan x="10" y="138">  │   ├─┬ cli-commands@0.1.0 </tspan>
+<tspan x="10" y="154">  │   │ └── command-line-commands@1.0.4 </tspan>
+<tspan x="10" y="170">  │   ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="186">  │   │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="202">  │   ├─┬ req-then@0.5.1 </tspan>
+<tspan x="10" y="218">  │   │ ├── defer-promise@1.0.1 </tspan>
+<tspan x="10" y="234">  │   │ └── lodash.pick@4.4.0 </tspan>
+<tspan x="10" y="250">  │   └── uuid@3.0.1 </tspan>
+<tspan x="10" y="266">  ├─┬ array-back@1.0.4 </tspan>
+<tspan x="10" y="282">  │ └── typical@2.6.0 </tspan>
+<tspan x="10" y="298">  ├─┬ command-line-tool@0.6.4 </tspan>
+<tspan x="10" y="314">  │ ├── ansi-escape-sequences@3.0.0 </tspan>
+<tspan x="10" y="330">  │ ├─┬ command-line-args@3.0.5 </tspan>
+<tspan x="10" y="346">  │ │ └── find-replace@1.0.3 </tspan>
+<tspan x="10" y="362">  │ └─┬ command-line-usage@3.0.8 </tspan>
+<tspan x="10" y="378">  │   └─┬ table-layout@0.3.0 </tspan>
+<tspan x="10" y="394">  │     ├── deep-extend@0.4.1 </tspan>
+<tspan x="10" y="410">  │     └─┬ wordwrapjs@2.0.0 </tspan>
+<tspan x="10" y="426">  │       └── reduce-flatten@1.0.1 </tspan>
+<tspan x="10" y="442">  ├── console-dope@0.3.6 </tspan>
+<tspan x="10" y="458">  ├─┬ file-set@1.1.1 </tspan>
+<tspan x="10" y="474">  │ └─┬ glob@7.1.1 </tspan>
+<tspan x="10" y="490">  │   ├── fs.realpath@1.0.0 </tspan>
+<tspan x="10" y="506">  │   ├─┬ inflight@1.0.6 </tspan>
+<tspan x="10" y="522">  │   │ └── wrappy@1.0.2 </tspan>
+<tspan x="10" y="538">  │   ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="554">  │   ├─┬ minimatch@3.0.3 </tspan>
+<tspan x="10" y="570">  │   │ └─┬ brace-expansion@1.1.7 </tspan>
+<tspan x="10" y="586">  │   │   ├── balanced-match@0.4.2 </tspan>
+<tspan x="10" y="602">  │   │   └── concat-map@0.0.1 </tspan>
+<tspan x="10" y="618">  │   ├── once@1.4.0 </tspan>
+<tspan x="10" y="634">  │   └── path-is-absolute@1.0.1 </tspan>
+<tspan x="10" y="650">  ├── string-tools@1.0.0 </tspan>
+<tspan x="10" y="666">  └── test-value@2.1.0</tspan>
+</text>
+</svg>
