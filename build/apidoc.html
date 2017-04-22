@@ -209,7 +209,23 @@
   })
   return results
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+})
+
+var results = renamer.replace(options)
+results = renamer.replaceIndexToken(results)
+if (results.list.length) {
+  if (options[&#x27;dry-run&#x27;]) {
+    dope.bold.underline.log(&#x27;Dry run&#x27;)
+    renamer.<span class="apidocCodeKeywordSpan">dryRun</span>(results).list.forEach(log.bind(null, options.verbose))
+  } else {
+    renamer.rename(results).list.forEach(log.bind(null, options.verbose))
+  }
+}
+} else {
+dope.red.error(&#x27;No input files supplied&#x27;)
+dope.log(cli.usage)
+...</pre></li>
     </ul>
 
 
@@ -226,7 +242,23 @@
   fileStats.filesAndDirs = fileStats.files.concat(fileStats.dirs.reverse())
   return fileStats
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} catch (err) {
+tool.halt(err)
+}
+
+var options = cli.options
+
+if (options.files.length) {
+var fileStats = renamer.<span class="apidocCodeKeywordSpan">expand</span>(options.files)
+options.files = fileStats.filesAndDirs
+
+fileStats.notExisting.forEach(function (file) {
+  log(options.verbose, { before: file, error: &#x27;does not exist&#x27; })
+})
+
+var results = renamer.replace(options)
+...</pre></li>
     </ul>
 
 
@@ -261,7 +293,22 @@
   })
   return results
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var results = renamer.replace(options)
+  results = renamer.replaceIndexToken(results)
+  if (results.list.length) {
+    if (options[&#x27;dry-run&#x27;]) {
+      dope.bold.underline.log(&#x27;Dry run&#x27;)
+      renamer.dryRun(results).list.forEach(log.bind(null, options.verbose))
+    } else {
+      renamer.<span class="apidocCodeKeywordSpan">rename</span>(results).list.forEach(log.bind(null, options.verbose))
+    }
+  }
+} else {
+  dope.red.error(&#x27;No input files supplied&#x27;)
+  dope.log(cli.usage)
+}
+...</pre></li>
     </ul>
 
 
@@ -284,7 +331,23 @@
   results.list = options.files.map(replaceSingle.bind(null, findRegex, options.replace))
   return results
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fileStats = renamer.expand(options.files)
+options.files = fileStats.filesAndDirs
+
+fileStats.notExisting.forEach(function (file) {
+  log(options.verbose, { before: file, error: &#x27;does not exist&#x27; })
+})
+
+var results = renamer.<span class="apidocCodeKeywordSpan">replace</span>(options)
+results = renamer.replaceIndexToken(results)
+if (results.list.length) {
+  if (options[&#x27;dry-run&#x27;]) {
+    dope.bold.underline.log(&#x27;Dry run&#x27;)
+    renamer.dryRun(results).list.forEach(log.bind(null, options.verbose))
+  } else {
+    renamer.rename(results).list.forEach(log.bind(null, options.verbose))
+...</pre></li>
     </ul>
 
 
@@ -305,7 +368,23 @@
   })
   return results
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+options.files = fileStats.filesAndDirs
+
+fileStats.notExisting.forEach(function (file) {
+  log(options.verbose, { before: file, error: &#x27;does not exist&#x27; })
+})
+
+var results = renamer.replace(options)
+results = renamer.<span class="apidocCodeKeywordSpan">replaceIndexToken</span>(results)
+if (results.list.length) {
+  if (options[&#x27;dry-run&#x27;]) {
+    dope.bold.underline.log(&#x27;Dry run&#x27;)
+    renamer.dryRun(results).list.forEach(log.bind(null, options.verbose))
+  } else {
+    renamer.rename(results).list.forEach(log.bind(null, options.verbose))
+  }
+...</pre></li>
     </ul>
 
 
